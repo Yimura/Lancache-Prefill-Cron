@@ -1,6 +1,6 @@
 FROM tpill90/steam-lancache-prefill:latest
 
-LABEL org.opencontainers.image.source=https://github.com/Yimura/Lancache-Prefill-Cron.git
+LABEL org.opencontainers.image.source https://github.com/Yimura/Lancache-Prefill-Cron
 
 ENV FILE=/etc/cron.d/prefill-cron
 
