@@ -1,10 +1,11 @@
 FROM tpill90/steam-lancache-prefill:latest
 
+ENV FILE=/etc/cron.d/prefill-cron
+
 RUN set -x &&\
     apt update &&\
     apt install -qq -y cron
 
-ARG FILE=/etc/cron.d/prefill-cron
 RUN touch ${FILE} &&\
     chmod 0644 ${FILE}
 
