@@ -1,5 +1,8 @@
 FROM tpill90/steam-lancache-prefill:latest
 
+LABEL org.opencontainers.image.title "Steam Lancache Prefill cronjob"
+LABEL org.opencontainers.image.authors Yimura
+LABEL org.opencontainers.image.description "Dockerized cronjob running the Steam Lancache prefilling tool, at container initial startup as well as at 4am."
 LABEL org.opencontainers.image.source https://github.com/Yimura/Lancache-Prefill-Cron
 
 ENV FILE=/etc/cron.d/prefill-cron
